@@ -13,7 +13,7 @@
     - Noé: Partie accueil et contact
     - Pierrick: Partie boutique
 
-- Script bash: Yasmine et Johan
+- Script bash / Serveur WEB : Yasmine et Johan
 
 - Fichier membres.yaml créé et complété par Noé et Pierrick (à compléter par Yasmine et Johan)
 
