@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Info | Boutique</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/boutique.css" />
+    </head>
+    <body>
+        <div class="container text-center p-4">
+            <div class="row mb-3">
+                <div class="col">
+                    <h1>Boutique</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div id="divFilters" class="col-lg-3 sticky-top mb-3">
+                    <div id="cardFilter" class="card">
+                        <div id="divHeaderFilter" class="card-header">
+                            <h5 class="card-title d-inline">Filtres</h5>
+                            <img
+                                src="images/icones/caret-down-solid.svg"
+                                alt="Flèche vers le bas"
+                                height="15px"
+                                width="15px"
+                                class="float-end d-lg-none mt-1 img-white"
+                            />
+                        </div>
+                        <div id="divBodyFilter" class="card-body">
+                            <div class="p-2">
+                                <div class="input-group mb-3">
+                                    <input
+                                        id="inputFilter"
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Rechercher un produit..."
+                                        aria-label="Rechercher"
+                                        aria-describedby="button-addon2"
+                                    />
+                                    <span class="input-group-text">
+                                        <img
+                                            src="images/icones/magnifying-glass-solid.svg"
+                                            alt="Loupe"
+                                            height="15px"
+                                            width="15px"
+                                        />
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="card-title">
+                                            Par type de produit
+                                        </h6>
+                                    </div>
+                                    <div class="card-body text-start">
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="checkboxTourPc"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="checkboxTourPc"
+                                            >
+                                                Tour PC
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="checkboxEcran"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="checkboxEcran"
+                                            >
+                                                Écran
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="checkboxImprimante"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="checkboxImprimante"
+                                            >
+                                                Imprimante
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value=""
+                                                id="checkboxCasqueAudio"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="checkboxCasqueAudio"
+                                            >
+                                                Casque audio
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div
+                        class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-4"
+                    >
+                        <div id="product1" class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">
+                                        <span class="product-type">
+                                            Tour PC
+                                        </span>
+                                        -
+                                        <span class="product-name">
+                                            Lanova X38
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <img
+                                                src="images/tour.png"
+                                                alt="Tour d'ordinateur de bureau"
+                                                height="150px"
+                                                width="150px"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-xl-6 d-flex align-items-center"
+                                        >
+                                            <ul class="card-text text-start">
+                                                <li>Intel Core i3-13100</li>
+                                                <li>DDR5 8 Go</li>
+                                                <li>SSD 256 Go</li>
+                                                <li>Graveur DVD</li>
+                                                <li>Wi-Fi 6/Bluetooth</li>
+                                                <li>Windows 11</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5 class="card-title">500€</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="product2" class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">
+                                        <span class="product-type">
+                                            Écran
+                                        </span>
+                                        -
+                                        <span class="product-name">
+                                            Samsoon 24" LED S24
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <img
+                                                src="images/ecran.png"
+                                                alt="Écran d'ordinateur"
+                                                height="150px"
+                                                width="150px"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-xl-6 d-flex align-items-center"
+                                        >
+                                            <ul class="card-text text-start">
+                                                <li>Écran PC Full HD 1080p</li>
+                                                <li>1 ms (MPRT)</li>
+                                                <li>165 Hz</li>
+                                                <li>HDMI/DisplayPort</li>
+                                                <li>16/9</li>
+                                                <li>Noir</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5 class="card-title">100€</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="product3" class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">
+                                        <span class="product-type">
+                                            Imprimante
+                                        </span>
+                                        -
+                                        <span class="product-name">
+                                            Sister MWOS-50
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <img
+                                                src="images/imprimante.png"
+                                                alt="Imprimante"
+                                                height="150px"
+                                                width="150px"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-xl-6 d-flex align-items-center"
+                                        >
+                                            <ul class="card-text text-start">
+                                                <li>
+                                                    Imprimante Multifonction
+                                                </li>
+                                                <li>Jet d'encre</li>
+                                                <li>Couleur</li>
+                                                <li>3-en-1</li>
+                                                <li>USB 2.0</li>
+                                                <li>Wi-Fi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5 class="card-title">80€</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="product4" class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">
+                                        <span class="product-type">
+                                            Casque audio
+                                        </span>
+                                        -
+                                        <span class="product-name">
+                                            Faukal F45
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <img
+                                                src="images/casque.png"
+                                                alt="Casque audio"
+                                                height="150px"
+                                                width="150px"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-xl-6 d-flex align-items-center"
+                                        >
+                                            <ul class="card-text text-start">
+                                                <li>Casque fermé</li>
+                                                <li>Transducteurs 45 mm</li>
+                                                <li>Pliable</li>
+                                                <li>Câbles amovibles</li>
+                                                <li>Jack 3.5/6.35 mm</li>
+                                                <li>Noir</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5 class="card-title">50€</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/filtres.js"></script>
+    </body>
+</html>

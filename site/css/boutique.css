@@ -1,0 +1,32 @@
+@media screen and (max-width: 991px) {
+    #divBodyFilter {
+        transition: max-height 400ms ease-in-out;
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #divBodyFilter.visible {
+        max-height: 800px;
+    }
+}
+
+.card-header,
+.card-footer {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(10, 88, 202, 1) 0%,
+        rgba(5, 44, 101, 1) 100%
+    );
+    color: #f8f9fa;
+}
+
+.card {
+    border-color: #0a58ca;
+}
+
+.img-white {
+    filter: invert(100%) sepia(18%) saturate(843%) hue-rotate(177deg)
+        brightness(101%) contrast(96%);
+}
