@@ -1,0 +1,149 @@
+/**
+CSS lié au Header
+ */
+
+.navbar {
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(10, 88, 202, 1) 0%,
+            rgba(5, 44, 101, 1) 100%
+    );
+    color: #f8f9fa;
+
+    text-align: center;
+    align-content: center;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: rgba(255, 228, 32, 0.76);
+}
+
+.nav-item.active .nav-link {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/**
+
+ */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/**
+CSS lié au Footer
+ */
+
+footer {
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(10, 88, 202, 1) 0%,
+            rgba(5, 44, 101, 1) 100%
+    );
+    color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p,
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: rgba(255, 228, 32, 0.76);
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .social-links li {
+    display: inline;
+}
+
+
+/**
+CSS lié a la présentation
+ */
+.hero {
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+
+.Ce\ que\ nous\ proposons\ : {
+    background-color: #e0f7fa;
+    padding: 60px 0;
+    border-top: 5px solid #007bff;
+    border-bottom: 5px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card {
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(10, 88, 202, 1) 0%,
+            rgba(5, 44, 101, 1) 100%
+    );
+    color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.category-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
