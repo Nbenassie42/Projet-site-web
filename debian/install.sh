@@ -3,14 +3,14 @@
 # Vérifier si le serveur web de base est installé sur la machine
 expected_output="i web-server" ;
 output=`tasksel --list-tasks | grep "$expected_output"` ;
-if [[ $output == $expected_output* ]] then 
-    is_web_server_installed= true
+if [[ $output == "$expected_output"* ]] then 
+    is_web_server_installed=true
 else
-    is_web_server_installed= false
+    is_web_server_installed=false
 fi
 
 # S'il n'est pas installé, lancer son installation
-if [ $is_web_server_installed != true ] ; then
+if [ "$is_web_server_installed" != true ] ; then
     echo "Installation du serveur web..." ;
     tasksel install web-server ;
 fi
@@ -45,7 +45,7 @@ chmod -R 750 /var/www/randominfo.fr/ &&
 # Copier le fichier de configuration de l'hôte virtuel
 # dans le répertoire de configuration des hôtes virtuels d'apache
 # Arrêt de l'exécution du script en cas d'erreur (&&)
-cp ./randominfo.fr.conf /etc/apache2/sites-available/ &&
+cp ./debian/randominfo.fr.conf /etc/apache2/sites-available/ &&
 
 # Désactiver tous les autres sites actuellement sur la machine
 # notamment la page par défaut d'apache
@@ -60,11 +60,11 @@ a2ensite randominfo.fr.conf >> install.log &&
 
 # Redémarrer le serveur afin de prendre en compte tous les changements
 # Arrêt de l'exécution du script en cas d'erreur (&&)
-echo 'Redémarrage du serveur apache...' ;
+echo 'Redémarrage du serveur apache...' &&
 systemctl reload apache2 &&
 
 # Affichage d'une confirmation d'installation terminée
-echo 'Installation du site web terminée!' ;
+echo 'Installation du site web terminée!' &&
 
 # Suppression du fichier de log
 rm install.log ;

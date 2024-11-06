@@ -24,7 +24,7 @@ echo 'Installation du site web randominfo.fr...' ;
 # Copie des fichiers du site web vers le répertoire /var/www/html/
 # Ce dossier est utilisé par apache (httpd) pour servir un site web
 # Arrêt de l'exécution du script en cas d'erreur (&&)
-cp -R ../randominfo.fr/* /var/www/html/ &&
+cp -R ./randominfo.fr/* /var/www/html/ &&
 
 # Le groupe apache est celui du serveur apache
 # L'utilisateur root ainsi que le groupe apache
@@ -43,7 +43,7 @@ chmod -R 750 /var/www/html/ &&
 # Copier le fichier de configuration de l'hôte virtuel
 # dans le répertoire de configuration des hôtes virtuels d'apache
 # Arrêt de l'exécution du script en cas d'erreur (&&)
-cp ./randominfo.fr.conf /etc/httpd/conf.d &&
+cp ./rocky_linux/randominfo.fr.conf /etc/httpd/conf.d &&
 
 # Test de la configuration d'apache
 # Arrêt de l'exécution du script en cas d'erreur (&&)

@@ -396,7 +396,7 @@ Cette manipulation est nécessaire si vous souhaitez activer le service http, c'
 
 ## 5. Installation du site
 
-1. Se rendre dans le dossier bug.busters `cd bug.busters`
+1. Se rendre dans le dossier Projet-site-web/ `cd Projet-site-web/`
 
 2. Exécuter le script d'installation
 
